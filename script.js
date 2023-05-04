@@ -154,7 +154,7 @@ function renderItems() {
       const delIndex = delBtn.parentElement.parentElement.id;
       removeValueAtIndex(delIndex);
       renderItems();
-      singlerenderItems();
+//       singlerenderItems();
     })
 
     buttonContainer.appendChild(addBtn);
