@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 80vh;
     width: 80vw;
-    padding:50px ;
+    /* padding-left:100px ; */
     /* color: white; */
     background-color: black;
 }
@@ -25,7 +25,8 @@ body {
 .topBar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding-left: 20px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     /* font-weight: lighter; */
@@ -62,11 +63,12 @@ body {
     background-color: black;
     color:rgb(115, 68, 159);
     backdrop-filter: blur(2px);
-    position: absolute;
     height: 100vh;
     width: 100vw;
-    top: 0;
+    position: absolute;
     left: 0;
+    top: 0;
+    /* overflow-x: hidden; */
     display: none;
   }
 
@@ -96,6 +98,7 @@ body {
     justify-content: space-evenly;
     gap: 20px;
     padding: 20px;
+   
     /* z-index:; */
   }
   
@@ -103,7 +106,7 @@ body {
       background-color: white;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       min-height: 200px;
-      min-width: 150px;
+     width: 200px;
       /* z-index: -1; */
       /* display : flex;
       flex-direction: column; */
@@ -206,4 +209,38 @@ body {
 .todo
 {
   color: blueviolet;
+}
+
+@media screen and (min-width:300px) and (max-width:760px) {
+  .single-task-modal{
+    height: 150vh;
+    width: 100vw;
+    z-index: 1;
+  }
+  .add-option {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    /* color: blu; */
+}
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25%;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  /* font-weight: lighter; */
+}
+.taskContainer
+{
+  overflow-y: hidden;
+}
+/* .taskCard 
+{
+  position: absolute;
+  top: 30px;
+} */
 }
