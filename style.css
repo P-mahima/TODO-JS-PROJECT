@@ -1,4 +1,10 @@
 
+* {
+  font-family: "Manrope", sans-serif;
+  cursor: default;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+}
 
 
 body {
@@ -11,11 +17,6 @@ body {
   padding: 20px;
 }
 
-* {
-  font-family: "Manrope", sans-serif;
-  cursor: default;
-  /* overflow: hidden; */
-}
 
 .box {
   background-color: white;
@@ -49,7 +50,7 @@ body {
 .task-modal {
   background-color: rgba(0, 0, 0, 0.367);
   backdrop-filter: blur(2px);
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   top: 0;

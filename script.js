@@ -23,10 +23,10 @@ function ToggleTaskModal() {
   // Acess the Element with the ID as "modal"
   const modal = document.getElementById("task-modal");
   // console.log(modal.style.display);
-  if (modal.style.display === "flex") {
+  if (modal.style.display === "block") {
     modal.style.display = "none";
   } else {
-    modal.style.display = "flex";
+    modal.style.display = "block";
   }
   taskInput.focus();
 }
